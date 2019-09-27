@@ -20,7 +20,8 @@ function updateAArVersion(){
     vv=$v1"."$v2"."$y
     echo 新版本号$vv
     # 更新配置文件
-    sed -i '' 's/VERSION_NAME='$v'/VERSION_NAME='$vv'/g' configs/gradle.properties
+    echo `pwd`
+    sed -i 's/VERSION_NAME='$v'/VERSION_NAME='$vv'/g' configs/gradle.properties
     if [ $? -eq 0 ]; then
         echo ''
     else
@@ -28,7 +29,7 @@ function updateAArVersion(){
         exit
     fi
 }
-# updateAArVersion
+#updateAArVersion
 # 删除 fat-aar 引用
 function delFatAarConfig() {
     if [  ${isPlugin} == false  ]; then
