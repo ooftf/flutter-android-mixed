@@ -1,4 +1,4 @@
-# flutter_android_mixed
+# flutter-android-mixed
 
 这是一个Flutter和Android混合开发的示例项目，本项目采用将flutter项目打包成arr，然后Android项目引用的方式进行混合开发  
 详细细节可查看文章[flutter打包aar上传maven集成到原生android工程](https://www.jianshu.com/p/2258760e9540)  
