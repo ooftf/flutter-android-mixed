@@ -141,7 +141,7 @@ if [ `grep -c 'uploadArchives.gradle' .android/Flutter/build.gradle` -eq '1' ]; 
     echo "Found!"
 else
     echo "not found , 去修改"
-    sed -i '' '2i\
+    sed -i '2i\
     apply from: "../config/uploadArchives.gradle"' .android/Flutter/build.gradle
 fi
 
