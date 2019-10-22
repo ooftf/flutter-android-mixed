@@ -51,6 +51,6 @@
 ### 遇到can't find libflutter.so  问题
     重新build一下应该就可以了
 # 未验证
-## 如果没有maven私服，可以使用阿里https://maven.aliyun.com/mvn/view
+## 如果没有maven私服，可以使用[阿里仓库服务](https://maven.aliyun.com/mvn/view)
 
 # 如果有什么问题欢迎进行交流QQ:994749769
