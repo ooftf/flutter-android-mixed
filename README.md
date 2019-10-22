@@ -7,10 +7,10 @@
 1. 项目结构
     创建flutter项目要选择flutter module
 2. flutter.sh文件怎么运行？  
-    安装git，然后在flutter.sh所在目录有点点击git bash here  
+    安装git，然后在flutter.sh所在目录右键点击git bash here  
     s输入命令 sh flutter.sh  
 3. 如果你使用和文章中相同的 flutter.sh文件可能还会遇到['更新版本号失败...']的问题  
-    发生问题的原因是sh文件命令会自动修改你的maven仓库版本，实现自动加一的功能。但是脚本有一处语法错误，现已经修改完成。使用本项目的flutter.sh就可以了，其实一般情况下可以关掉次功能  
+    发生问题的原因是sh文件命令有几处语法错误。现已经修改完成。使用本项目的flutter.sh即可  
 4. 打包成的arr文件后续加载过程和问题解决都没有。    
     
 # Android项目加载arr文件，展示界面
@@ -49,9 +49,8 @@
     }     
     其中  window.defaultRouteName就是 Flutter.createView第三个参数，根据不同的参数返回不同的界面
 ### 遇到can't find libflutter.so  问题
-### arr中虽然有 libflutter.so文件但是不知道为何没有打包进最终apk文件(因为arr不能包含so文件？？？？)
-    总之将 arr文件中的libflutter.so文件拷贝到项目中就可以解决了
+    重新build一下应该就可以了
 # 未验证
-## 虽然打包的arr使用android项目加载没有问题了，但是还没有验证arr上传maven这一步是否可行    
+## 如果没有maven私服，可以使用阿里https://maven.aliyun.com/mvn/view
 
 # 如果有什么问题欢迎进行交流QQ:994749769
