@@ -2,14 +2,16 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(_widgetFroRouter(window.defaultRouteName));
+import 'ListDemo.dart';
 
-Widget _widgetFroRouter(String route){
+void main() => runApp(_widgetForRouter(window.defaultRouteName));
+
+Widget _widgetForRouter(String route){
   switch (route) {
     case 'route1':
       return MyApp();
     case 'route2':
-      return MyApp();
+      return ListDemoWidget();
     default:
       return Center(
         child: Text('Unknown route: $route', textDirection: TextDirection.ltr),

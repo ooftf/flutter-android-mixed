@@ -29,7 +29,7 @@ function updateAArVersion(){
         exit
     fi
 }
-#updateAArVersion
+updateAArVersion
 # 删除 fat-aar 引用
 function delFatAarConfig() {
     if [  ${isPlugin} == false  ]; then
