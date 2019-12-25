@@ -13,9 +13,7 @@ Widget _widgetForRouter(String route){
     case 'route2':
       return ListDemoWidget();
     default:
-      return Center(
-        child: Text('Unknown route: $route', textDirection: TextDirection.ltr),
-      );
+      return ListDemoWidget();
   }
 }
 
